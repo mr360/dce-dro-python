@@ -1,6 +1,6 @@
 # Validation of SeQ-DCEMRI FTV computations with the FTV digital phantom
 
-Generated 2026-10-02T13:47:03 by `validation/validate_phantom.py`.
+Generated 2026-10-02T13:58:27 by `validation/validate_phantom.py`.
 
 ## Provenance
 
@@ -50,7 +50,6 @@ Each region is a (tissue, target PE, target SER) combination inside the ROI. Mea
 
 | Tissue | PE | SER | Voxels | S0 float→DICOM | PE measured | SER measured | SER float | Expected | DICOM | On threshold | Agree |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| background | 0.000 | 0.000 | 1094400 | 14.25→14 | 0.00–0.00 | -0.0000–-0.0000 | -0.0000000 | excluded: 1094400 | excluded: 1094400 |  | yes |
 | breast_fat | 60.000 | 0.700 | 53640 | 84.16→84 | 59.52–59.52 | 0.6944–0.6944 | 0.7000022 | excluded: 53640 | excluded: 53640 |  | yes |
 | breast_fat | 60.000 | 0.900 | 78840 | 84.16→84 | 59.52–59.52 | 0.8929–0.8929 | 0.9000025 | excluded: 78840 | excluded: 78840 |  | yes |
 | breast_fat | 60.000 | 1.200 | 85320 | 84.16→84 | 59.52–59.52 | 1.1905–1.1905 | 1.2000030 | excluded: 85320 | excluded: 85320 |  | yes |
@@ -69,6 +68,7 @@ Each region is a (tissue, target PE, target SER) combination inside the ROI. Mea
 | breast_glandular | 80.000 | 1.300 | 210000 | 184.75→184 | 80.43–80.43 | 1.2982–1.2982 | 1.3000026 | 0.90 < SER ≤ 1.30: 210000 | 0.90 < SER ≤ 1.30: 210000 | yes | yes |
 | major_muscle | 50.000 | 0.500 | 6960 | 136.82→136 | 50.74–50.74 | 0.5036–0.5036 | 0.5000020 | excluded: 6960 | excluded: 6960 |  | yes |
 | major_muscle | 120.000 | 3.100 | 49680 | 136.82→136 | 121.32–121.32 | 3.1132–3.1132 | 3.1000035 | excluded: 49680 | excluded: 49680 |  | yes |
+| phantom_fill | 0.000 | 0.000 | 1094400 | 14.25→14 | 0.00–0.00 | -0.0000–-0.0000 | -0.0000000 | excluded: 1094400 | excluded: 1094400 |  | yes |
 
 ## Region breakdown – scenario B  PE threshold 0
 
@@ -76,7 +76,6 @@ Each region is a (tissue, target PE, target SER) combination inside the ROI. Mea
 
 | Tissue | PE | SER | Voxels | S0 float→DICOM | PE measured | SER measured | SER float | Expected | DICOM | On threshold | Agree |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| background | 0.000 | 0.000 | 1094400 | 14.25→14 | 0.00–0.00 | -0.0000–-0.0000 | -0.0000000 | excluded: 1094400 | excluded: 1094400 |  | yes |
 | breast_fat | 60.000 | 0.700 | 53640 | 84.16→84 | 59.52–59.52 | 0.6944–0.6944 | 0.7000022 | excluded: 53640 | excluded: 53640 |  | yes |
 | breast_fat | 60.000 | 0.900 | 78840 | 84.16→84 | 59.52–59.52 | 0.8929–0.8929 | 0.9000025 | excluded: 78840 | excluded: 78840 | yes | yes |
 | breast_fat | 60.000 | 1.200 | 85320 | 84.16→84 | 59.52–59.52 | 1.1905–1.1905 | 1.2000030 | excluded: 85320 | excluded: 85320 |  | yes |
@@ -95,6 +94,7 @@ Each region is a (tissue, target PE, target SER) combination inside the ROI. Mea
 | breast_glandular | 80.000 | 1.300 | 210000 | 184.75→184 | 80.43–80.43 | 1.2982–1.2982 | 1.3000026 | 0.90 < SER ≤ 1.30: 210000 | 0.90 < SER ≤ 1.30: 210000 | yes | yes |
 | major_muscle | 50.000 | 0.500 | 6960 | 136.82→136 | 50.74–50.74 | 0.5036–0.5036 | 0.5000020 | 0.00 < SER ≤ 0.90: 6960 | 0.00 < SER ≤ 0.90: 6960 |  | yes |
 | major_muscle | 120.000 | 3.100 | 49680 | 136.82→136 | 121.32–121.32 | 3.1132–3.1132 | 3.1000035 | excluded: 49680 | excluded: 49680 |  | yes |
+| phantom_fill | 0.000 | 0.000 | 1094400 | 14.25→14 | 0.00–0.00 | -0.0000–-0.0000 | -0.0000000 | excluded: 1094400 | excluded: 1094400 |  | yes |
 
 ## Region breakdown – scenario G  Washout (CAD) map
 
@@ -102,7 +102,6 @@ Each region is a (tissue, target PE, target SER) combination inside the ROI. Mea
 
 | Tissue | PE | SER | Voxels | S0 float→DICOM | PE measured | SER measured | SER float | Expected | DICOM | On threshold | Agree |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| background | 0.000 | 0.000 | 1094400 | 14.25→14 | 0.00–0.00 | -0.0000–-0.0000 | -0.0000000 | excluded: 1094400 | excluded: 1094400 |  | yes |
 | breast_fat | 60.000 | 0.700 | 53640 | 84.16→84 | 59.52–59.52 | 0.6944–0.6944 | 0.7000022 | excluded: 53640 | excluded: 53640 |  | yes |
 | breast_fat | 60.000 | 0.900 | 78840 | 84.16→84 | 59.52–59.52 | 0.8929–0.8929 | 0.9000025 | excluded: 78840 | excluded: 78840 |  | yes |
 | breast_fat | 60.000 | 1.200 | 85320 | 84.16→84 | 59.52–59.52 | 1.1905–1.1905 | 1.2000030 | excluded: 85320 | excluded: 85320 |  | yes |
@@ -121,6 +120,7 @@ Each region is a (tissue, target PE, target SER) combination inside the ROI. Mea
 | breast_glandular | 80.000 | 1.300 | 210000 | 184.75→184 | 80.43–80.43 | 1.2982–1.2982 | 1.3000026 | Washout: 210000 | Washout: 210000 |  | yes |
 | major_muscle | 50.000 | 0.500 | 6960 | 136.82→136 | 50.74–50.74 | 0.5036–0.5036 | 0.5000020 | Persistent: 6960 | Persistent: 6960 | yes | yes |
 | major_muscle | 120.000 | 3.100 | 49680 | 136.82→136 | 121.32–121.32 | 3.1132–3.1132 | 3.1000035 | Washout: 49680 | Washout: 49680 |  | yes |
+| phantom_fill | 0.000 | 0.000 | 1094400 | 14.25→14 | 0.00–0.00 | -0.0000–-0.0000 | -0.0000000 | excluded: 1094400 | excluded: 1094400 |  | yes |
 
 ## Sweep: PE threshold (%) (ROI whole_phantom)
 
