@@ -7,3 +7,8 @@ I use ```mkvirtualenv``` on MacOSx (Sonoma 14.5). To set it up, instructions can
 Once you are in the virtual environment, install the required modules listed in the ```requirements.txt```:
 
 ```
+pip install -r requirements.txt
+```
+
+# FTV validation
+The [`validation/`](validation/README.md) folder contains tools to validate and audit the FTV, PE and SER values computed by the SeQ-DCEMRI 3D Slicer extension with the FTV digital phantom. See [`validation/METHODOLOGY.md`](validation/METHODOLOGY.md).

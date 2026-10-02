@@ -1,0 +1,31 @@
+scenario,roi,settings,quantity,expected_voxels,float_voxels,dicom_voxels,expected_cm3,dicom_cm3
+"A  defaults, preset SER range",breasts,{},FTV0,778320,778320,778320,539.842752,539.842752
+"A  defaults, preset SER range",breasts,{},FTVthresh,389520,593520,593520,270.17107200000004,411.665472
+"A  defaults, preset SER range",breasts,{},ETV,2150400,2150400,2150400,1491.51744,1491.51744
+B  PE threshold 0,breasts,{'pe_threshold': 0.0},FTV0,1563600,1563600,1563600,1084.51296,1084.51296
+B  PE threshold 0,breasts,{'pe_threshold': 0.0},FTVthresh,778320,1161840,1161840,539.842752,805.8522240000001
+B  PE threshold 0,breasts,{'pe_threshold': 0.0},ETV,2150400,2150400,2150400,1491.51744,1491.51744
+C  PE threshold 50,whole_phantom,{'pe_threshold': 50.0},FTV0,1556640,1556640,1556640,1079.685504,1079.685504
+C  PE threshold 50,whole_phantom,{'pe_threshold': 50.0},FTVthresh,778320,1161840,1161840,539.842752,805.8522240000001
+C  PE threshold 50,whole_phantom,{'pe_threshold': 50.0},ETV,9349680,9349680,9349680,6484.938048000001,6484.938048000001
+"D  background 0, PE 0",whole_phantom,"{'pe_threshold': 0.0, 'background_threshold': 0.0}",FTV0,8504400,8504400,8504400,5898.65184,5898.65184
+"D  background 0, PE 0",whole_phantom,"{'pe_threshold': 0.0, 'background_threshold': 0.0}",FTVthresh,1046880,1594560,1515720,726.1159680000001,1051.303392
+"D  background 0, PE 0",whole_phantom,"{'pe_threshold': 0.0, 'background_threshold': 0.0}",ETV,9349680,9349680,9349680,6484.938048000001,6484.938048000001
+E  single SER threshold 1.0,breasts,"{'display_ser_range': False, 'ser_threshold': 1.0}",FTV0,778320,778320,778320,539.842752,539.842752
+E  single SER threshold 1.0,breasts,"{'display_ser_range': False, 'ser_threshold': 1.0}",FTVthresh,389520,389520,389520,270.17107200000004,270.17107200000004
+E  single SER threshold 1.0,breasts,"{'display_ser_range': False, 'ser_threshold': 1.0}",ETV,2150400,2150400,2150400,1491.51744,1491.51744
+F  single SER threshold 1.25,breasts,"{'pe_threshold': 50.0, 'display_ser_range': False, 'ser_threshold': 1.25}",FTV0,1563600,1556640,1563600,1084.51296,1084.51296
+F  single SER threshold 1.25,breasts,"{'pe_threshold': 50.0, 'display_ser_range': False, 'ser_threshold': 1.25}",FTVthresh,394800,394800,394800,273.83328,273.83328
+F  single SER threshold 1.25,breasts,"{'pe_threshold': 50.0, 'display_ser_range': False, 'ser_threshold': 1.25}",ETV,2150400,2150400,2150400,1491.51744,1491.51744
+G  Washout (CAD) map,breasts,"{'use_ser_map': False, 'pe_threshold': 50.0}",FTV0,1613280,1606320,1613280,1118.971008,1118.971008
+G  Washout (CAD) map,breasts,"{'use_ser_map': False, 'pe_threshold': 50.0}",FTVthresh,828000,828000,828000,574.3008000000001,574.3008000000001
+G  Washout (CAD) map,breasts,"{'use_ser_map': False, 'pe_threshold': 50.0}",ETV,2150400,2150400,2150400,1491.51744,1491.51744
+H  left breast only,left_breast,{'pe_threshold': 50.0},FTV0,779040,778320,779040,540.3421440000001,540.3421440000001
+H  left breast only,left_breast,{'pe_threshold': 50.0},FTVthresh,383520,383520,383520,266.009472,266.009472
+H  left breast only,left_breast,{'pe_threshold': 50.0},ETV,1047600,1047600,1047600,726.61536,726.61536
+I  right breast only,right_breast,{'pe_threshold': 50.0},FTV0,779040,778320,779040,540.3421440000001,540.3421440000001
+I  right breast only,right_breast,{'pe_threshold': 50.0},FTVthresh,394800,778320,778320,273.83328,539.842752
+I  right breast only,right_breast,{'pe_threshold': 50.0},ETV,1047600,1047600,1047600,726.61536,726.61536
+J  module default RefBox,module_default_box,{},FTV0,15376,15376,15376,10.664793600000001,10.664793600000001
+J  module default RefBox,module_default_box,{},FTVthresh,15376,15376,15376,10.664793600000001,10.664793600000001
+J  module default RefBox,module_default_box,{},ETV,459947,459947,459947,319.0192392,319.0192392
