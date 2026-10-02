@@ -1,0 +1,6 @@
+# Validation tools (validation/). The notebooks have their own dependencies.
+numpy>=1.24
+scipy>=1.10
+opencv-python-headless>=4.8   # the phantom notebook draws its regions with OpenCV
+pydicom>=2.4                  # only for --dicom-dir
+pytest>=7
